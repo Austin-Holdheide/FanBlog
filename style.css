@@ -8,19 +8,25 @@
     box-sizing: border-box;
 }
 
+
+
 .side-box {
+    /* Existing styles for side-box */
     width: 125%;
-    /* Width of the side box */
     height: 75%;
-    /* Height of the side box */
     background-color: white;
     color: #000000;
     border-radius: 15px;
-    /* Adjust the border-radius for rounded corners */
     margin: 10%;
     padding-left: 1%;
     box-sizing: border-box;
+    /* Additional styles for dynamic content */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+
+
 
 .gradient-background {
     background: linear-gradient(94deg,#cf239f,#5755ef,#661229);
