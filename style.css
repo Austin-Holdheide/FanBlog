@@ -1,26 +1,35 @@
-.header {
-    padding: 1px;
-    padding-left: 10px;
-    text-align: left;
-    background: #333333;
-    color: white;
-    font-size: 20px;
-  }
 
-  .gradient-background {
-    background: linear-gradient(45deg,#800020,#008080,#556B2F);
+.header {
+    padding: 15%;
+    text-align: top;
+    color: white;
+    font-family:Arial;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.gradient-background {
+    background: linear-gradient(16deg, #5e50a4, #3f15a2, #794b6f);
     background-size: 180% 180%;
-    animation: gradient-animation 3s ease infinite;
-  }
-  
-  @keyframes gradient-animation {
+    animation: gradient-animation 21s ease infinite;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Adjust text color as needed */
+}
+
+@keyframes gradient-animation {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}
