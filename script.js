@@ -32,7 +32,7 @@ fetch(serverUrl, {
             const dateCell = newRow.insertCell(3);
 
             idCell.textContent = post.id;
-            titleCell.innerHTML = `<a href="blog.html?id=${post.id}">${post.title}</a>`;
+            titleCell.innerHTML = `<a href="posts/blog.html?id=${post.id}">${post.title}</a>`;
             // Add views data if available
             viewsCell.textContent = post.views || 'N/A';
             dateCell.textContent = post.date;
