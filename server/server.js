@@ -1,3 +1,4 @@
+//server.js
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
@@ -31,14 +32,19 @@ app.get('/:category', (req, res) => {
         // Get the requested post ID from the query parameters
         const postId = req.query.id;
 
-        // Find the post with the matching ID in the requested category
-        const requestedPost = jsonData[category].find(post => post.id == postId);
-
-        // Send the requested post data as JSON
-        if (requestedPost) {
-            res.json(requestedPost);
+        if (category === 'posts' && !postId) {
+            // If it's a request to '/posts' without a specific ID, return all posts
+            res.json(jsonData[category]);
         } else {
-            res.status(404).json({ error: 'Post not found' });
+            // Find the post with the matching ID in the requested category
+            const requestedPost = jsonData[category].find(post => post.id == postId);
+
+            // Send the requested post data as JSON
+            if (requestedPost) {
+                res.json(requestedPost);
+            } else {
+                res.status(404).json({ error: 'Post not found' });
+            }
         }
     });
 });
