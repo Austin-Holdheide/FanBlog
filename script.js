@@ -17,8 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const blogPostTitleElement = document.getElementById('blogPostTitle');
             const dataBodyElement = document.getElementById('dataBody');
 
+            // Check if 'posts' property exists in data
+            const posts = data.posts || [];
+
             // Sort posts array by ID in descending order
-            const sortedPosts = data.posts.sort((a, b) => b.id - a.id);
+            const sortedPosts = posts.sort((a, b) => b.id - a.id);
 
             // Update content in the side-box
             blogPostTitleElement.textContent = 'Blog Post';
