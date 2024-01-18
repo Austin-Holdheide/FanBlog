@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create a hyperlink for the title using innerHTML
             const titleCell = row.insertCell(1);
-            titleCell.innerHTML = `<a href="/post/blog.html?id=${post.id}">${post.title}</a>`;
+            titleCell.innerHTML = `<a href="\posts/blog.html?id=${post.id}">${post.title}</a>`;
 
             row.insertCell(2).textContent = post.views;
             row.insertCell(3).textContent = post.date;
