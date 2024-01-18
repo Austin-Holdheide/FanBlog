@@ -1,56 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const serverUrl = 'http://127.0.0.1:6942/posts';
+    // Function to send GET request to http://127.0.0.1:6942/posts
+    function fetchData() {
+        fetch("http://127.0.0.1:6942/posts")
+            .then(response => response.json())
+            .then(data => populateTable(data))
+            .catch(error => console.error("Error fetching data:", error));
+    }
 
-    fetch(serverUrl, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            const blogPostTitleElement = document.getElementById('blogPostTitle');
-            const dataBodyElement = document.getElementById('dataBody');
+    // Function to populate the table with data
+    function populateTable(posts) {
+        const dataTable = document.getElementById("dataBody");
 
-            // Check if 'posts' property exists in data
-            const posts = data.posts || [];
+        // Sort posts by ID in descending order
+        posts.sort((a, b) => b.id - a.id);
 
-            // Sort posts array by ID in descending order
-            const sortedPosts = posts.sort((a, b) => b.id - a.id);
+        posts.forEach(post => {
+            // Create a new row
+            const row = dataTable.insertRow();
 
-            // Update content in the side-box
-            blogPostTitleElement.textContent = 'Blog Post';
+            // Add ID, Title, Views, and Date to the row
+            row.insertCell(0).textContent = post.id;
 
-            // Update table content for each post
-            sortedPosts.forEach(post => {
-                const newRow = dataBodyElement.insertRow();
-                const idCell = newRow.insertCell(0);
-                const titleCell = newRow.insertCell(1);
-                const viewsCell = newRow.insertCell(2);
-                const dateCell = newRow.insertCell(3);
+            // Create a hyperlink for the title using innerHTML
+            const titleCell = row.insertCell(1);
+            titleCell.innerHTML = `<a href="/post/blog.html?id=${post.id}">${post.title}</a>`;
 
-                idCell.textContent = post.id;
-                titleCell.innerHTML = `<a href="posts/blog.html?id=${post.id}">${post.title}</a>`;
-                // Add views data if available
-                viewsCell.textContent = post.views || 'N/A';
-                dateCell.textContent = post.date;
-
-                // Add faint line between entries
-                dataBodyElement.innerHTML += '<tr><td colspan="3" class="entry-divider"></td></tr>';
-            });
-
-            // Add ellipsis if content overflows
-            const sideBox = document.getElementById('sideBox');
-            if (sideBox.scrollHeight > sideBox.clientHeight) {
-                sideBox.classList.add('overflowed');
-            }
-        })
-        .catch(error => {
-            console.error('Fetch error:', error);
+            row.insertCell(2).textContent = post.views;
+            row.insertCell(3).textContent = post.date;
         });
+    }
+
+    // Call fetchData function when the page loads
+    fetchData();
 });
