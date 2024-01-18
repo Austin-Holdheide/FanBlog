@@ -1,5 +1,5 @@
 // Replace 'your_server_url' with the actual URL of the server you want to send the GET request to
-const serverUrl = 'http://127.0.0.1:5000';
+const serverUrl = 'http://127.0.0.1:5000/posts';
 
 fetch(serverUrl, {
     method: 'GET',
@@ -23,9 +23,10 @@ fetch(serverUrl, {
 
         // Update table content
         const newRow = dataBodyElement.insertRow();
-        const titleCell = newRow.insertCell(0);
-        const viewsCell = newRow.insertCell(1);
-        const dateCell = newRow.insertCell(2);
+        const idCell = newRow.insertCell(0);
+        const titleCell = newRow.insertCell(1);
+        const viewsCell = newRow.insertCell(2);
+        const dateCell = newRow.insertCell(3);
 
         titleCell.textContent = data.title;
         // Add views data if available
