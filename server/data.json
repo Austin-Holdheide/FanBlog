@@ -4,66 +4,6 @@
             "id": 1,
             "title": "First Blog Post",
             "views": 20,
-            "date": "2024-01-20"
-        },
-        {
-            "id": 2,
-            "title": "Second Blog Post",
-            "views": 15,
-            "date": "2024-01-21"
-        },
-        {
-            "id": 3,
-            "title": "Third Blog Post",
-            "views": 30,
-            "date": "2024-01-22"
-        },
-        {
-            "id": 4,
-            "title": "Fourth Blog Post",
-            "views": 25,
-            "date": "2024-01-23"
-        },
-        {
-            "id": 5,
-            "title": "Fifth Blog Post",
-            "views": 18,
-            "date": "2024-01-24"
-        },
-        {
-            "id": 6,
-            "title": "Sixth Blog Post",
-            "views": 22,
-            "date": "2024-01-25"
-        },
-        {
-            "id": 7,
-            "title": "Seventh Blog Post",
-            "views": 27,
-            "date": "2024-01-26"
-        },
-        {
-            "id": 8,
-            "title": "Eighth Blog Post",
-            "views": 16,
-            "date": "2024-01-27"
-        },
-        {
-            "id": 9,
-            "title": "Ninth Blog Post",
-            "views": 21,
-            "date": "2024-01-28"
-        },
-        {
-            "id": 10,
-            "title": "Tenth Blog Post",
-            "views": 19,
-            "date": "2024-01-29"
-        },
-        {
-            "id": 11,
-            "title": "JSON File Title",
-            "views": 101,
             "date": "2024-01-18"
         }
     ],
@@ -71,78 +11,8 @@
         {
             "id": 1,
             "title": "First Blog Post",
-            "date": "2024-01-20",
-            "text": "This is the text content of the first blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 2,
-            "title": "Second Blog Post",
-            "date": "2024-01-21",
-            "text": "This is the text content of the second blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 3,
-            "title": "Third Blog Post",
-            "date": "2024-01-22",
-            "text": "This is the text content of the third blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 4,
-            "title": "Fourth Blog Post",
-            "date": "2024-01-23",
-            "text": "This is the text content of the fourth blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 5,
-            "title": "Fifth Blog Post",
-            "date": "2024-01-24",
-            "text": "This is the text content of the fifth blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 6,
-            "title": "Sixth Blog Post",
-            "date": "2024-01-25",
-            "text": "This is the text content of the sixth blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 7,
-            "title": "Seventh Blog Post",
-            "date": "2024-01-26",
-            "text": "This is the text content of the seventh blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 8,
-            "title": "Eighth Blog Post",
-            "date": "2024-01-27",
-            "text": "This is the text content of the eighth blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 9,
-            "title": "Ninth Blog Post",
-            "date": "2024-01-28",
-            "text": "This is the text content of the ninth blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 10,
-            "title": "Tenth Blog Post",
-            "date": "2024-01-29",
-            "text": "This is the text content of the tenth blog post.",
-            "author": "Austin Holdheide"
-        },
-        {
-            "id": 11,
-            "title": "JSON File Title",
             "date": "2024-01-18",
-            "text": "This is the text content of the eleventh blog post.",
+            "text": "This is the first blog post on this repo!",
             "author": "Austin Holdheide"
         }
     ]

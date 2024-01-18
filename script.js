@@ -18,15 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create a new row
             const row = dataTable.insertRow();
 
-            // Add ID, Title, Views, and Date to the row
-            row.insertCell(0).textContent = post.id;
-
-            // Create a hyperlink for the title using innerHTML
-            const titleCell = row.insertCell(1);
+            // Add Title and Date to the row (ID and Views are omitted)
+            const titleCell = row.insertCell(0);
             titleCell.innerHTML = `<a href="\posts/blog.html?id=${post.id}">${post.title}</a>`;
 
-            row.insertCell(2).textContent = post.views;
-            row.insertCell(3).textContent = post.date;
+            row.insertCell(1).textContent = post.date;
         });
     }
 

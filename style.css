@@ -70,8 +70,9 @@
 }
 
 #dataTable th, #dataTable td {
-    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     padding: 8px;
+    padding-right: 8px;
     text-align: left;
 }
 
