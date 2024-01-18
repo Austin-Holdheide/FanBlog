@@ -54,3 +54,32 @@
         background-position: 0% 50%;
     }
 }
+/* Existing styles for .header, .side-box, and .gradient-background remain unchanged */
+
+#blogPostTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#dataTable th, #dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.entry-divider {
+    border-bottom: 1px dashed #ddd;
+    height: 10px;
+}
+
+.overflowed {
+    /* Your existing styles for overflowed side box */
+    overflow-y: scroll;
+}

@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>FanBlog</title>
-
 </head>
 
 <body class="gradient-background">
@@ -15,8 +14,21 @@
 
     <div class="side-box" id="sideBox">
         <!-- Content inside the side box will be dynamically updated -->
-        <h2 id="title">Title</h2>
-        <p id="date">Date</p>
+        <h2 id="blogPostTitle">Blog Post</h2>
+
+        <!-- Table for Title | Views | Date -->
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Views</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody">
+                <!-- Table body content will be dynamically updated -->
+            </tbody>
+        </table>
     </div>
 
     <!-- Add your content here -->
