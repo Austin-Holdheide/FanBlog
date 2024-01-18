@@ -31,6 +31,12 @@ fetch(serverUrl, {
             const viewsCell = newRow.insertCell(2);
             const dateCell = newRow.insertCell(3);
 
+           // const aTag = new Element("a");
+           // aTag.href = `posts/blog.html?id=${post.id}`;
+          //  aTag.textContent = post.title;
+
+           // titleCell.childElement = aTag;
+
             idCell.textContent = post.id;
             titleCell.innerHTML = `<a href="posts/blog.html?id=${post.id}">${post.title}</a>`;
             // Add views data if available

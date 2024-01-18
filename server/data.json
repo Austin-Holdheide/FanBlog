@@ -72,67 +72,78 @@
             "id": 1,
             "title": "First Blog Post",
             "date": "2024-01-20",
-            "text": "This is the text content of the first blog post."
+            "text": "This is the text content of the first blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 2,
             "title": "Second Blog Post",
             "date": "2024-01-21",
-            "text": "This is the text content of the second blog post."
+            "text": "This is the text content of the second blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 3,
             "title": "Third Blog Post",
             "date": "2024-01-22",
-            "text": "This is the text content of the third blog post."
+            "text": "This is the text content of the third blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 4,
             "title": "Fourth Blog Post",
             "date": "2024-01-23",
-            "text": "This is the text content of the fourth blog post."
+            "text": "This is the text content of the fourth blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 5,
             "title": "Fifth Blog Post",
             "date": "2024-01-24",
-            "text": "This is the text content of the fifth blog post."
+            "text": "This is the text content of the fifth blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 6,
             "title": "Sixth Blog Post",
             "date": "2024-01-25",
-            "text": "This is the text content of the sixth blog post."
+            "text": "This is the text content of the sixth blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 7,
             "title": "Seventh Blog Post",
             "date": "2024-01-26",
-            "text": "This is the text content of the seventh blog post."
+            "text": "This is the text content of the seventh blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 8,
             "title": "Eighth Blog Post",
             "date": "2024-01-27",
-            "text": "This is the text content of the eighth blog post."
+            "text": "This is the text content of the eighth blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 9,
             "title": "Ninth Blog Post",
             "date": "2024-01-28",
-            "text": "This is the text content of the ninth blog post."
+            "text": "This is the text content of the ninth blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 10,
             "title": "Tenth Blog Post",
             "date": "2024-01-29",
-            "text": "This is the text content of the tenth blog post."
+            "text": "This is the text content of the tenth blog post.",
+            "author": "Austin Holdheide"
         },
         {
             "id": 11,
             "title": "JSON File Title",
             "date": "2024-01-18",
-            "text": "This is the text content of the eleventh blog post."
+            "text": "This is the text content of the eleventh blog post.",
+            "author": "Austin Holdheide"
         }
     ]
 }

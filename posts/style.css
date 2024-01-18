@@ -1,14 +1,12 @@
 .header {
     padding: 15%;
-    text-align: top;
+    text-align: top; /* Note: 'top' is not a valid value for 'text-align' */
     color: white;
     font-family: Arial;
     font-size: 20px;
     width: 100%;
     box-sizing: border-box;
 }
-
-
 
 .side-box {
     /* Existing styles for side-box */
@@ -26,11 +24,8 @@
     text-overflow: ellipsis;
 }
 
-
-
-
 .gradient-background {
-    background: linear-gradient(94deg,#cf239f,#5755ef,#661229);
+    background: linear-gradient(94deg, #cf239f, #5755ef, #661229);
     background-size: 180% 180%;
     animation: gradient-animation 21s ease infinite;
     margin: 0;
@@ -54,33 +49,39 @@
     100% {
         background-position: 0% 50%;
     }
-}
-/* Existing styles for .header, .side-box, and .gradient-background remain unchanged */
 
-#blogPostTitle {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
+    /* Existing styles for .header, .side-box, and .gradient-background remain unchanged */
 
-#dataTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
+    #blogPostTitle {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
 
-#dataTable th, #dataTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
+    #dataTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
 
-.entry-divider {
-    border-bottom: 1px dashed #ddd;
-    height: 10px;
-}
+    #dataTable th, #dataTable td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
 
-.overflowed {
-    /* Your existing styles for overflowed side box */
-    overflow-y: scroll;
+    .entry-divider {
+        border-bottom: 1px dashed #ddd;
+        height: 10px;
+    }
+
+    .overflowed {
+        
+        overflow-y: scroll;
+    }
+
+    h2, p {
+        text-align: center; 
+    }
+    
 }

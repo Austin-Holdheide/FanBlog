@@ -1,5 +1,3 @@
-// server.js
-
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
@@ -10,7 +8,7 @@ const port = 6942;
 // Use CORS middleware
 app.use(cors());
 
-app.get('/posts', (req, res) => {
+app.get('/:category', (req, res) => {
     // Log the IP address and request type for GET requests
     console.log(`Received GET request from IP: ${req.ip}`);
 
@@ -27,30 +25,21 @@ app.get('/posts', (req, res) => {
         // Parse the JSON data
         const jsonData = JSON.parse(data);
 
-        // Send the posts data as JSON
-        res.json({ posts: jsonData.posts });
-    });
-});
+        // Get the requested category from the route parameters
+        const category = req.params.category;
 
-app.get('/blogposts', (req, res) => {
-    // Log the IP address and request type for GET requests
-    console.log(`Received GET request from IP: ${req.ip}`);
+        // Get the requested post ID from the query parameters
+        const postId = req.query.id;
 
-    // Read data from the JSON file
-    const filePath = path.join(__dirname, 'data.json');
+        // Find the post with the matching ID in the requested category
+        const requestedPost = jsonData[category].find(post => post.id == postId);
 
-    fs.readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error reading JSON file:', err);
-            res.status(500).send('Internal Server Error');
-            return;
+        // Send the requested post data as JSON
+        if (requestedPost) {
+            res.json(requestedPost);
+        } else {
+            res.status(404).json({ error: 'Post not found' });
         }
-
-        // Parse the JSON data
-        const jsonData = JSON.parse(data);
-
-        // Send the blogposts data as JSON
-        res.json({ blogposts: jsonData.blogposts });
     });
 });
 
