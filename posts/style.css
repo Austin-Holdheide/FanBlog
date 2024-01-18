@@ -1,0 +1,86 @@
+.header {
+    padding: 15%;
+    text-align: top;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.side-box {
+    /* Existing styles for side-box */
+    width: 125%;
+    height: 75%;
+    background-color: white;
+    font-family: Arial;
+    color: #000000;
+    border-radius: 15px;
+    margin: 10%;
+    padding-left: 1%;
+    box-sizing: border-box;
+    /* Additional styles for dynamic content */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+.gradient-background {
+    background: linear-gradient(94deg,#cf239f,#5755ef,#661229);
+    background-size: 180% 180%;
+    animation: gradient-animation 21s ease infinite;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5755ef;
+    /* Adjust text color as needed */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Existing styles for .header, .side-box, and .gradient-background remain unchanged */
+
+#blogPostTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#dataTable th, #dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.entry-divider {
+    border-bottom: 1px dashed #ddd;
+    height: 10px;
+}
+
+.overflowed {
+    /* Your existing styles for overflowed side box */
+    overflow-y: scroll;
+}
