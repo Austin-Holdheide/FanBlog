@@ -17,11 +17,14 @@ fetch(serverUrl, {
         const blogPostTitleElement = document.getElementById('blogPostTitle');
         const dataBodyElement = document.getElementById('dataBody');
 
+        // Sort posts array by ID in descending order
+        const sortedPosts = data.posts.sort((a, b) => b.id - a.id);
+
         // Update content in the side-box
         blogPostTitleElement.textContent = 'Blog Post';
 
         // Update table content for each post
-        data.posts.forEach(post => {
+        sortedPosts.forEach(post => {
             const newRow = dataBodyElement.insertRow();
             const idCell = newRow.insertCell(0);
             const titleCell = newRow.insertCell(1);
