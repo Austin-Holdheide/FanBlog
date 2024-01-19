@@ -1,3 +1,4 @@
+// posts/script.js
 document.addEventListener("DOMContentLoaded", function () {
     const sideBoxElement = document.getElementById('sideBox');
 

@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener("DOMContentLoaded", function () {
     // Function to send GET request to http://127.0.0.1:6942/posts
     function fetchData() {
