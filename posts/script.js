@@ -1,4 +1,3 @@
-// posts/script.js
 document.addEventListener("DOMContentLoaded", function () {
     const sideBoxElement = document.getElementById('sideBox');
 
@@ -41,5 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => {
             console.error('Fetch error:', error);
+
+            // Display the error message in the side-box
+            const errorElement = document.createElement('p');
+            errorElement.textContent = `Error: ${error.message}`;
+            errorElement.style.color = 'red';
+            sideBoxElement.appendChild(errorElement);
         });
 });
